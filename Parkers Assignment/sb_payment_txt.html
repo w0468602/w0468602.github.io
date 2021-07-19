@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!--
+      New Perspectives on HTML5 and CSS3, 8th Edition
+      Tutorial 7
+      Case Problem 2
+
+      Spice Bowl Payment Form
+      Author:Parker Muise
+      Date:2021-07-16
+
+      Filename:   sb_payment.html
+
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>Spice Bowl Payment Form</title>
+   <link href="CSS/sb_reset.css" rel="stylesheet" />
+   <link href="CSS/sb_forms.css" rel="stylesheet" />
+   <link href="CSS/sb_validate_txt.css" rel="stylesheet" />
+   <link href="CSS/sb_styles.css" rel="stylesheet" />
+   <script src="other/sb_script.js"></script>
+</head>
+
+<body>
+   <header>
+      <img src="images/sb_logo.png" alt="The Spice Bowl" />
+      <form id="login" action="https://www.example.com/sb/login" method="POST">
+         <label for="userBox"><input type="text" id="userBox" name="username" placeholder="username"></label>
+         <label for="pwdBox"><input type="password" id="pwdBox" name="password" placeholder="password"></label>
+      </form>
+      <nav> <a id="navicon" href="#"><img src="images/sb_navicon.png" alt="" /></a>
+         <ul>
+            <li><a href="#">Spices</a></li>
+            <li><a href="#">Recipes</a></li>
+            <li><a href="#">My Cart</a></li>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Contact Us</a></li>
+         </ul>
+      </nav>
+   </header>
+
+   <section>
+      <h1>Payment Form</h1>
+      <form id="payment">
+         <fieldset id="billing">
+            <legend>Billing Information (required)</legend>
+            <label for="firstBox">First Name</label>
+            <input type="text" id="firstBox" name="fName" required="required" />
+
+            <label for="lastBox">Last name</label>
+            <input type="text" id="lastBox" name="lName" required="required" />
+
+            <label for="streetBox" required>Street Address</label>
+            <input type="text" id="streetBox" name="street" required="required" />
+
+            <label for="streetBox2">Street Address (2)</label>
+            <input type="text" id="streetBox2" name="street2" />
+
+            <label for="cityBox">City</label>
+            <input type="text" id="cityBox" name="city" required="required" />
+
+
+
+            <label for="year">Province/territory</label>
+            <select id="year" name="yearSL">
+               <option value="1">NS</option>
+               <option value="2">NB</option>
+               <option value="3">NF</option>
+               <option value="4">NW</option>
+               <option value="5">NU</option>
+               <option value="6">MA</option>
+               <option value="7">BC</option>
+               <option value="8">AL</option>
+               <option value="9">PEI</option>
+               <option value="10">QB</option>
+               <option value="11">ON</option>
+               <option value="12">SK</option>
+               <option value="13">YK</option>
+            </select>
+
+            <label for="zip/Postal">ZIP/Postal code</label>
+            <input type="text" pattern="^\d{5}(-\d{4}?$" id="zip/Postal" name="zip/Postal" required="required" />
+
+            <label for="country">Country</label>
+            <input value="United States" type="text" id="countryBox" name="countryBox" required="required" />
+
+            <label for="phoneBox">Phone</label>
+            <input type="tel" id="phoneBox" name="phoneBox" required="required" />
+         </fieldset>
+         <fieldset id="creditCard">
+            <legend>Credit Card (Required)</legend>
+            <fieldset id="cardLabel" class="optionGroup">
+               <label class="cardLabel" for="amex">
+                  <img src="images/sb_amex.png" alt="amex">
+                  <input type="radio" id="amex" name="amex" required="required">
+               </label>
+               <label class="cardLabel" for="discover">
+                  <img src="images/sb_discover.png" alt="discover">
+                  <input type="radio" id="discover" required="required">
+               </label>
+               <label class="cardLabel" for="master">
+                  <img src="images/sb_master.png" alt="master">
+                  <input type="radio" id="master" name="master" required="required">
+               </label>
+               <label class="cardLabel" for="visa">
+                  <img src="images/sb_visa.png" alt="visa">
+                  <input type="radio" id="visa" name="visa" required="required">
+               </label>
+            </fieldset>
+
+            <label for="cardBox">Credit Card Number</label>
+            <input id="cardBox" name="cardBox" type="text">
+            <label for="expirationDate">Expiration Date</label>
+            <select id="expirationDate" name="expirationDate">
+               <option value="--Month--">--Month--</option>
+               <option value="1">January (01)</option>
+               <option value="2">Febuary (02)</option>
+               <option value="3">March (03)</option>
+               <option value="4">April (04)</option>
+               <option value="5">May (05)</option>
+               <option value="6">June (06)</option>
+               <option value="7">July (07)</option>
+               <option value="8">August (08)</option>
+               <option value="9">September (09)</option>
+               <option value="10">October (10)</option>
+               <option value="11">November (11)</option>
+               <option value="12">December (12)</option>
+            </select>
+            <select id="yearList" name="yearList">
+               <option value="--Year--">--Year--</option>
+               <option value="1">2020</option>
+               <option value="2">2021</option>
+               <option value="3">2022</option>
+               <option value="4">2023</option>
+               <option value="5">2024</option>
+               <option value="6">2025</option>
+               <option value="7">2026</option>
+               <option value="8">2027</option>
+               <option value="9">2028</option>
+               <option value="10">2029</option>
+               <option value="11">2030</option>
+               <option value="12">2031</option>
+               <option value="13">2032</option>
+            </select>
+
+            <label for="cscBox">CSC</label>
+            <input type="text" id="cscBox" name="cscBox" maxlength="3" pattern="^\d{3}$" placeholder="123">
+         </fieldset>
+
+         <button type="submit"><img src="images/sb_button.png" alt="next"></button>
+      </form>
+      <aside>
+         <h1>Menu Ideas</h1>
+         <h2>Salt-Roasted Pecans</h2>
+         <ul>
+            <li>2 cups pecans</li>
+            <li>3 Tbs. butter, melted</li>
+            <li>1 1/4 tsp. fine sea salt</li>
+         </ul>
+         <p>Preheat oven to 325&deg;. Toss pecans and butter together;
+            add salt and toss again. Spread in a single layer on a baking
+            sheet. Bake about 15 minutes. Cook on baking sheet.
+         </p>
+
+         <h2>Dried Beef Sticks</h2>
+         <ul>
+            <li>5 lbs. ground chuck</li>
+            <li>5 Tbs. quick salt</li>
+            <li>3 tsp. mustard seed</li>
+            <li>2 tsp. granulated garlic</li>
+            <li>2 tsp. cracked pepper</li>
+            <li>1 Tbs. hickory smoked salt</li>
+            <li>1 Tbs. liquid smoke</li>
+         </ul>
+         <p>Mix beef and season. Place in a large covered container
+            for three days.
+            On third day, shape beef into sticks, and bake at 150&deg; for
+            8 hours (turn half-way through).
+         </p>
+      </aside>
+
+   </section>
+
+   <footer>
+      <nav>
+         <ul>
+            <li class="newgroup"><a href="#">Home</a></li>
+            <li><a href="#">Keyword Search</a></li>
+
+            <li class="newgroup"><a href="#">Spices</a></li>
+            <li><a href="#">Seasonings</a></li>
+            <li><a href="#">Blends</a></li>
+            <li><a href="#">Salts &amp; Peppers</a></li>
+            <li><a href="#">Popcorn Seasonings</a></li>
+            <li><a href="#">Dip Mixes</a></li>
+            <li><a href="#">Bulk Spices</a></li>
+            <li><a href="#">Extracts</a></li>
+            <li><a href="#">Flavorings</a></li>
+
+            <li class="newgroup"><a href="#">Spice Jars</a></li>
+            <li><a href="#">Spice Jar Labels</a></li>
+            <li><a href="#">Spice Sets</a></li>
+            <li><a href="#">Mortar &amp; Pestles</a></li>
+
+            <li class="newgroup"><a href="#">Cookbooks</a></li>
+            <li><a href="#">Online Recipes</a></li>
+            <li><a href="#">Forums</a></li>
+
+            <li class="newgroup"><a href="#">My Account</a></li>
+            <li><a href="#">Checkout</a></li>
+            <li><a href="#">Order History</a></li>
+            <li><a href="#">Shipping Info</a></li>
+
+            <li class="newgroup"><a href="#">Tech Support</a></li>
+            <li><a href="#">Hours</a></li>
+            <li><a href="#">Contact Us</a></li>
+         </ul>
+      </nav>
+   </footer>
+</body>
+
+</html>
