@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+/*
+   Filename: ProjectCss.css
+
+*/
+
+html {
+    background-color: rgb(251, 252, 255);
+}
+h1 {
+    font-family: monospace, sans-serif;
+}
+h3 {
+    font-family: monospace, sans-serif;
+}
+h5 {
+    font-family: monospace, sans-serif;
+}
+h4 {
+    font-family: monospace, sans-serif;
+}
+h2 {
+    font-family: monospace, sans-serif;
+}
+p {
+    font-family: monospace, sans-serif;
+}
+
+a {
+     text-decoration: none;
+    font-family: monospace, sans-serif;
+    font-weight: bold;
+}
+header > h1 {
+    font-size: 5em;
+    text-align: center;
+    font-family:monospace;
+}
+header > h1 {
+    border:5px solid black;
+}
+header > nav {
+    
+}
+a:hover {
+	background-color: rgb(150, 245, 80);
+}
+
+a {
+    background: rgb(137, 147, 124);
+}
+
+header > nav > ul > li {
+border: 5px solid rgb(21, 8, 17);
+}
