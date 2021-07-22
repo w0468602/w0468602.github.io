@@ -185,3 +185,7 @@ legend {
 p#firstparagraph {
     font-family: 'Zen Loop', cursive;
 }
+
+h1#why {
+    font-size: 1.7em;
+}
