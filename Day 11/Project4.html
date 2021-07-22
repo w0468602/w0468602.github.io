@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <!--
+   Author:Parker Muise
+   Date:2021-07-16
+   Filename: Project4.html
+   -->
+    <meta charset="utf-8">
+    <title>Gillette Cat Razors</title>
+    <link href="CSS/ProjectCss.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon-16x16.png" type="image/png">
+</head>
+
+<body>
+    <header>
+        <h1>Gillette Cat Razors</h1>
+        <nav>
+            <ul class="nav">
+                <li><a href="Project.html">Home</a></li>
+                <li id="productsPage">
+                    <div class="dropdown"><a href="Project2.html">Products</a>
+                        <div class="dropdown-content">
+                            <a href="Project2.html">Gillette Cat Razors</a>
+                            <a href="Project2.html">Gillette Cat Shaving Cream</a>
+                            <a href="Project2.html">Gillette Cat After Shave</a>
+                        </div>
+
+                    </div>
+                </li>
+                <li><a href="">Why Cat Razors</a></li>
+                <li><a href="">Cats For You</a></li>
+                <li><a href="Project4.html">Cart</a></li>
+                <li><a href="Project3.html">Sponsors</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <h2>Your Cart</h2>
+
+    <form>
+        <table class="Bill">
+            <fieldset id="billing">
+                <legend>Billing Information (<b>Required</b>)</legend>
+                <dt><label for="firstBox">First Name</label></dt>
+                <dd><input type="text" id="firstBox" name="fName" required="required" /></dd>
+                <br>
+                <dt><label for="lastBox">Last name</label></dt>
+                <dd><input type="text" id="lastBox" name="lName" required="required" /></dd>
+                <br>
+                <dt><label for="streetBox" required>Street Address</label></dt>
+                <dd><input type="text" id="streetBox" name="street" required="required" /></dd>
+                <br>
+                <dt><label for="cityBox">City</label></dt>
+                <dd><input type="text" id="cityBox" name="city" required="required" /></dd>
+                <br>
+                <dt><label for="year">Province</label></dt>
+                <dd><select id="year" name="yearSL"></dd>
+                <option value="1">NS</option>
+                </select>
+                <br>
+                <dt><label for="zip/Postal">Postal code</label></dt>
+                <dd><input type="text" pattern="^\d{5}(-\d{4}?$" id="zip/Postal" name="zip/Postal"
+                        required="required" /></dd>
+                <br>
+                <dt><label for="country">Country</label></dt>
+                <dd><input value="Canada" type="text" id="countryBox" name="countryBox" required="required" /></dd>
+                <br>
+                <dt><label for="phoneBox">Phone</label></dt>
+                <dd><input type="tel" id="phoneBox" name="phoneBox" required="required" /></dd>
+            </fieldset>
+        </table>
+        <button type="submit"><img src="images/next.jfif" alt="next"></button>
+    </form>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+    <br>
+    <br>
+    <footer>
+        <a href="Project3.html" id="Ólchobar">Ólchobar's Oatmilk and Other Dairy Products</a>
+    </footer>
+    <br>
+</body>
+
+</html>
