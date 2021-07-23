@@ -1,0 +1,211 @@
+@charset "utf-8";
+
+/*
+   Filename: ProjectCss.css
+
+*/
+
+html {
+    background-color: rgb(251, 252, 255);
+}
+h1 {
+    font-family: monospace, sans-serif;
+}
+h3 {
+    font-family: monospace, sans-serif;
+}
+h5 {
+    font-family: monospace, sans-serif;
+}
+h4 {
+    font-family: monospace, sans-serif;
+}
+h2 {
+    font-family: monospace, sans-serif;
+}
+p {
+    font-family: monospace, sans-serif;
+    font-weight: bold;
+}
+
+a {
+     text-decoration: none;
+    font-family: monospace, sans-serif;
+    font-weight: bold;
+}
+header > h1 {
+    font-size: 5em;
+    text-align: center;
+    font-family:monospace;
+    background-color: rgb(171, 218, 252);
+}
+header > h1 {
+    border:5px solid rgb(21, 8, 17);
+}
+
+header > nav > ul.nav > li:hover {
+	background: rgb(150, 245, 80);
+}
+
+a{
+    background: rgb(171, 218, 252);
+    color: rgb(89, 39, 155);
+}
+a:hover {
+	background: rgb(150, 245, 80);
+}
+
+header > nav > ul.nav > li {
+    border: 5px solid rgb(21, 8, 17);
+    font-size: large;
+    display: table;
+	width: 5%;
+    display: table-cell;
+	text-align: center;
+    background: rgb(171, 218, 252);
+}
+
+header > nav > ul.nav > li > a {
+    display: block;
+	width: 100%;
+}
+
+ul.sponsors > li > a {
+    font-size: 2em;
+    background-color: rgb(171, 218, 252);
+}
+
+
+ul.sponsors > h1 {
+    font-size: 3em;
+}
+
+ul.sponsors > li > a {
+    border: 5px solid rgb(21, 8, 17);
+    font-size: large;
+    display: table;
+        width: 5%;
+        display: table-cell;
+        text-align: center;
+}
+ul.sponsors > li > a:hover {
+    background: rgb(150, 245, 80);
+}
+    ul.sponsors > h1{
+        display: block;
+        width: 100%;
+}
+
+p#firstparagraph {
+        font-size: 2em;
+}
+
+img#firstimage {
+        float: left;
+        margin: 10px;
+}
+
+.imageTextContainer {
+        float: left;
+        clear:right;
+
+}
+
+/* Dropdown Trial */
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: rgb(150, 245, 80);}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+dd {
+    font-size: 1.5em;
+    font-family: monospace, sans-serif;
+    font-weight: bold;
+}
+
+dl {
+    float: left;
+    border:rgb(21, 8, 17) solid;
+}
+
+dl#razor {
+    clear: right;
+}
+
+a#Ólchobar {
+    float: right;
+    clear: left;
+}
+
+label {
+    font-family: monospace, sans-serif;
+  
+}
+
+legend {
+    font-family: monospace, sans-serif;
+    font-size: 1.3em;
+}
+
+p#firstparagraph {
+    font-family: 'Zen Loop', cursive;
+}
+
+h1#why {
+    font-size: 1.7em;
+}
+
+dl#go {
+    border:rgb(21, 8, 17) solid;
+}
+
+div.discription {
+background-color: rgb(171, 218, 252);
+text-align: center;
+}
+dl dd {
+    margin:0px;
+}
+div.discription:hover {
+    background-color: rgb(150, 245, 80);
+    
+}
+
+article#productsList {
+    margin-left: auto;
+    width: 1000px;
+    margin-right: auto;
+}
+
+div {
+    
+}
